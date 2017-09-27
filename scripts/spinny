@@ -1,8 +1,0 @@
-#!/bin/bash
-for (( ; ; ))
-do
-echo -ne '|\b'
-echo -ne '/\b'
-echo -ne '-\b'
-echo -ne '\\\b'
-done
