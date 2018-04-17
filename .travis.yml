@@ -1,23 +1,27 @@
-#This is a comment, you use the hashtag to start a comment.
+# Environmental Variables
+env:
+    - COMPILE_LANG=python
+    - COMPILE_LANG=arduino
 
 sudo: required
 language: $COMPILE_LANG
 python:
-    - "2.7"
-env:
-    - COMPILE_LANG=python
-    - COMPILE_LANG=arduino
+    - "3.6"
 
 # Cache PlatformIO packages using Travis CI container-based infrastructure
 cache:
     directories:
         - "~/.platformio"
 
+# Pre-Install commands
 install:
     - sudo pip install -U pip
+    - sudo for i in $(pip freeze); do pip install -U $i; done
 
+# Script to build
 script:
     - source "scripts/build_$COMPILE_LANG.sh"
     
+# Set up notifications to go to kealingalgebra2 Slack channel
 notifications:
     slack: kealingalgebra2:MyCH2sHZL1y591A2OdPEr8At
