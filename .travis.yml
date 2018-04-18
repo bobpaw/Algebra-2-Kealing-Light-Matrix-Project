@@ -4,7 +4,7 @@ env:
     - COMPILE_LANG=arduino
 
 git:
-    depth: 0
+    depth: false
 
 sudo: required
 language: $COMPILE_LANG
