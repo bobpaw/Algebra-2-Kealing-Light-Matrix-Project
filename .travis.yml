@@ -16,8 +16,8 @@ cache:
 # Pre-Install commands
 install:
   - sudo pip install -U pip
-  - if [ "${COMPILE_LANG}" = "python" ]; pip install --user -U -r python/refs/requirements.txt; fi
-  - if [ "${COMPILE_LANG}" = "arduino" ]; pip install --user -U platformio
+  - if [ "${COMPILE_LANG}" = "python" ]; then pip install --user -U -r python/refs/requirements.txt; fi
+  - if [ "${COMPILE_LANG}" = "arduino" ]; then pip install --user -U platformio; fi
 
 # Script to build
 script:
