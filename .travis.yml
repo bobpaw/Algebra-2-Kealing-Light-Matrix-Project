@@ -3,6 +3,9 @@ env:
     - COMPILE_LANG=python
     - COMPILE_LANG=arduino
 
+git:
+    depth: 0
+
 sudo: required
 language: $COMPILE_LANG
 python:
