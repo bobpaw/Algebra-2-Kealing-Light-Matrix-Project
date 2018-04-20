@@ -1,0 +1,2 @@
+https://learn.adafruit.com/32x16-32x32-rgb-led-matrix/library
+https://learn.adafruit.com/adafruit-neopixel-uberguide/neomatrix-library
