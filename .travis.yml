@@ -9,6 +9,7 @@ git:
 sudo: required
 language: $COMPILE_LANG
 python:
+    - "2.7"
     - "3.6"
 
 # Cache PlatformIO packages using Travis CI container-based infrastructure
